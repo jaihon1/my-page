@@ -3,12 +3,12 @@ import { Typography } from 'antd';
 
 const { Paragraph } = Typography;
 
-export function About() {
+export function Data() {
     return (
         <div>
-            <h2>About</h2>
+            <h2>Data</h2>
             <Paragraph>
-                This is a copyable text.
+                Show results from experiments and other stuff...
             </Paragraph>
         </div>
     );
