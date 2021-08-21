@@ -241,7 +241,7 @@ const data = [
 export function ExperimentTwoData() {
     return (
         <div>
-            <Table columns={columns} dataSource={data} pagination={{ pageSize: 50 }} scroll={{ y: 377 }} />
+            <Table columns={columns} dataSource={data} pagination={false} scroll={{ y: 377 }} />
         </div>
     );
 }
@@ -276,7 +276,7 @@ const columnsTotals = [
 export function ExperimentTwoDataTotals() {
     return (
         <div>
-            <Table columns={columnsTotals} dataSource={dataTotals} pagination={{ pageSize: 50 }} scroll={{ y: 377 }} />
+            <Table columns={columnsTotals} dataSource={dataTotals} pagination={false} scroll={{ y: 377 }} />
         </div>
     );
 }

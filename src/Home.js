@@ -15,7 +15,8 @@ export function Home() {
                 <Col span={16}>
                     <Title level={3}>Introduction</Title>
                     <Paragraph>
-                        Trying to solve hockey by building a model that predicts the winner of an NHL game.
+                        Trying to solve hockey with neural networks. Our goals is to build models that accurately predicts the winner of a specified NHL game.
+                        
                     </Paragraph>
                     <Title level={3}>Exploration</Title>
                     <Paragraph>
@@ -53,7 +54,6 @@ export function Home() {
                 </Col>
                 <Col span={4}></Col>
             </Row>
-            
         </div>
     );
 }
