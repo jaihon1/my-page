@@ -4,6 +4,7 @@ import { UserOutlined } from '@ant-design/icons';
 import { About } from './About';
 import { Home } from './Home';
 import { Data } from './Data';
+import { Documentation } from './Documentation';
 
 import {
   BrowserRouter as Router,
@@ -26,6 +27,7 @@ function App() {
           <div className="navbar" style={{ position: 'absolute', right: "55px" }}>
               <Link to="/" style={{ padding: '13px', color: '#000000' }}>Home</Link>
               <Link to="/data" style={{ padding: '13px', color: '#000000' }}>Data</Link>
+              <Link to="/documentation" style={{ padding: '13px', color: '#000000' }}>Documentation</Link>
               <Link to="/about" style={{ padding: '13px', color: '#000000' }}>About</Link>
           </div>
           <div className="navbar" style={{ position: 'absolute', right: "13px" }}>
@@ -34,6 +36,9 @@ function App() {
         </Header>
         <Content style={{ padding: '0 50px', backgroundColor: '#F8F8F8' }}>
           <Switch>
+            <Route path="/documentation">
+              <Documentation />
+            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -45,7 +50,7 @@ function App() {
             </Route>
           </Switch>
         </Content>
-        <Footer style={{ padding: '0 50px', backgroundColor: '#F5F5F5', textAlign: 'right' }}>
+        <Footer style={{ padding: '16px', backgroundColor: '#F5F5F5', textAlign: 'right' }}>
           <Text>Codex help hooman create this web site!</Text>
         </Footer>
       </Router>

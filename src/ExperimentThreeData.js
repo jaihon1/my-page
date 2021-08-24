@@ -2,27 +2,28 @@ import React from 'react';
 import { Table } from 'antd';
 
 const columns = [
-  {
-    title: 'Name',
-    dataIndex: 'name',
-    width: 144,
-  },
-  {
-    title: 'Type',
-    dataIndex: 'type',
-    width: 55,
-  },
-  {
-    title: 'Description',
-    dataIndex: 'description',
-    width: 144,
-  },
-  {
-    title: 'Total',
-    dataIndex: 'total',
-    width: 34,
-  },
+    {
+        title: 'Name',
+        dataIndex: 'name',
+        width: 64,
+    },
+    {
+        title: 'Type',
+        dataIndex: 'type',
+        width: 32,
+    },
+    {
+        title: 'Description',
+        dataIndex: 'description',
+        width: 64,
+    },
+    {
+        title: 'Total',
+        dataIndex: 'total',
+        width: 32,
+    },
 ];
+
 
 const data = [
     {
@@ -277,6 +278,54 @@ export function ExperimentThreeDataTotals() {
     return (
         <div>
             <Table columns={columnsTotals} dataSource={dataTotals} pagination={false} scroll={{ y: 377 }} />
+        </div>
+    );
+}
+
+
+const columnsResults = [
+    {
+        title: 'Hidden Layers',
+        dataIndex: 'hiddenLayers',
+        width: 32,
+    },
+    {
+      title: 'Accuracy',
+      dataIndex: 'accuracy',
+      width: 32,
+    },
+    {
+      title: 'F1 Weighed',
+      dataIndex: 'f1',
+      width: 32,
+    },
+  ];
+
+  const dataResults = [
+      {
+          key: 0,
+          hiddenLayers: '64 x 512',
+          accuracy: '0.588',
+          f1: '0.5837',
+      },
+      {
+        key: 0,
+        hiddenLayers: '64 x 32 x 32 x 32',
+        accuracy: '0.587',
+        f1: '0.5867',
+    },
+    {
+        key: 0,
+        hiddenLayers: '64 x 64 x 64 x 64 x 64 x 64 x 64 x 64',
+        accuracy: '0.587',
+        f1: '0.5866',
+    },
+  ];
+
+export function ExperimentThreeDataResults() {
+    return (
+        <div>
+            <Table columns={columnsResults} dataSource={dataResults} pagination={false} scroll={{ y: 377 }} />
         </div>
     );
 }

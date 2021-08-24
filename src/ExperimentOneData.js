@@ -5,22 +5,22 @@ const columns = [
   {
     title: 'Name',
     dataIndex: 'name',
-    width: 144,
+    width: 64,
   },
   {
     title: 'Type',
     dataIndex: 'type',
-    width: 55,
+    width: 32,
   },
   {
     title: 'Description',
     dataIndex: 'description',
-    width: 144,
+    width: 64,
   },
   {
     title: 'Total',
     dataIndex: 'total',
-    width: 34,
+    width: 32,
   },
 ];
 
